@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,300;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+
+:root {
+     /* primary */
+
+     --White: hsl(0, 0%, 100%);
+     --Black: hsl(0, 0%, 0%);
+     --Dark-Gray: hsl(0, 0%, 55%);
+     --Very-Dark-Gray: hsl(0, 0%, 41%);
+}
+
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    Font-size: 15px;
+    font-family: 'Alata';
+    
+}
+
+h1 {
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+
+.header-container {
+  background-image: url(images/desktop/image-hero.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  /* background: #0054bc; */
+  position: relative;
+  padding: 20px 50px;
+  /* top: 6rem; */
+}
+nav .icon {
+  font-size: 35px;
+  font-weight: 800;
+  color: #fff;
+  cursor: pointer;
+  font-family: "Sansita Swashed", cursive;
+}
+nav ol {
+  display: flex;
+  margin: auto 0;
+  list-style: none;
+}
+nav ol li {
+  margin: 0 10px;
+}
+nav ol li a {
+  font-size: 20px;
+  color: #fff;
+  text-transform: capitalize;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding: 8px 12px;
+}
+nav ol li:hover a {
+  background: #fff;
+  color: #000;
+  border-radius: 5px;
+}
+nav .bar {
+  position: relative;
+  margin: auto;
+  display: none;
+}
+nav .bar span {
+  color: #fff;
+  position: absolute;
+  font-size: 35px;
+}
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  display: none;
+}
+@media screen and (max-width: 1050px) {
+  nav {
+    display: block;
+    padding: 0;
+  }
+  nav .icon {
+    display: inline-block;
+    margin: 20px 50px;
+  }
+  nav ol {
+    display: block;
+    background: black;
+  }
+  nav ol li {
+    /* text-align: center; */
+    margin: 0;
+    display: none;
+  }
+  nav ol li a {
+    padding: 30px;
+    font-size: 28px;
+    display: block;
+  }
+  nav ol li:hover a {
+    background: #3e4856;
+    border-radius: 0;
+    color: #fff;
+  }
+  nav .bar {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 80px;
+    cursor: pointer;
+  }
+  nav .bar #times {
+    display: none;
+  }
+  #check:checked ~ nav .bar #bars {
+    display: none;
+  }
+  #check:checked ~ nav .bar #times {
+    display: block;
+  }
+  #check:checked ~ nav ol li {
+    display: block;
+  }
+}
+/*This is my youtube channel link*/
+#yt {
+  position: absolute;
+  bottom: 20px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: sans-serif;
+  right: 20px;
+  color: #000;
+}
+#yt:hover {
+  color: red;
+}
+
+
+
+
+
+
+
+
+header {
+    height: 100vh;
+    /* background-image: url(images/desktop/image-hero.jpg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    background-attachment: fixed;
+    /* position: relative; */
+    /* top: -1rem; */
+}
+
+header .text-container {
+    width: 480px;
+    border: 2px solid var(--White);
+    transform: translateX(-13rem);
+    letter-spacing: 5px;
+}
+
+header .text-container h1 {
+    color:white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 400;
+    padding: 1.5rem;
+}
+
+main .container {
+    margin-top: 7rem;
+    margin-bottom: 7rem;
+    display: flex;
+   /* justify-content: center; */
+   margin-right: auto;
+   margin-left: auto;
+   width: 80vw;
+  
+}
+main .image-container {
+    width: 50%;
+    
+}
+main .text-container {
+    align-self: flex-end;
+    width: 42%;
+    background-color: white;
+    padding: 3rem;
+
+}
+
+main .text-container h1 {
+    font-size: 2rem;
+    letter-spacing: 5px;
+    padding-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+main .text-container p {
+    font-size: 1rem;
+    font-family: 'Alata';
+    color: var(--Very-Dark-Gray);
+    letter-spacing: 0px;
+}
+
+.mobile-iteractive {
+    display: none;
+}
+
+
+
+main .our-creation {
+    align-items: flex-start;
+}
+
+main .container button {
+        margin-left: auto;
+}
+
+button {
+    padding: 5px 1.2rem;
+    background-color: white;
+    border: 1px solid blue;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+button:hover {
+    background-color: var(--Black);
+    color: #ffffff;
+}
+
+.our-creation-heading {
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--Black);
+}
+
+.our-creation-images {
+    margin-right: auto;
+   margin-left: auto;
+   width: 80vw;   
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.our-creation-images img {
+    display: inline-block;
+    padding-right: 0;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+    padding-left: 0.9rem;
+}
+
+.image-1 {
+    padding: 0;
+}
+
+.our-creation-1 {
+    display: inline-block;
+    
+}
+
+.image-grid { 
+    position: relative; 
+    /* width: 100%; for IE 6 */
+ }
+
+ .our-creation-images .image-grid img:hover {
+   color: var(--Dark-Gray);
+ }
+ 
+ .image-grid h2 { 
+    position: absolute; 
+    bottom: 3rem;
+    left: 3rem; 
+    width: 56%; 
+    color: var(--White);
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    
+ }
+
+ .image-grid .image-grid-image {
+     padding-left: 0;
+ }
+
+ .desktop-display-none {
+     display: none;
+ }
+
+ main {
+     margin-bottom: 4rem;
+ }
+
+ footer {
+     background-color: var(--Black);
+     padding-bottom: 4rem;
+     
+ }
+
+ footer .footer-container {
+     width: 80vw;
+     display: flex;
+     margin-left: auto;
+     margin-right: auto;
+     justify-content: space-between;
+     align-items: baseline;
+     padding-top: 3rem;
+ }
+
+ .logos svg {
+     display: inline-block;
+     margin-left: 1rem;
+ }
+ 
+ footer p {
+     color: white;
+ }
+
+ footer a {
+     text-decoration: none;
+     margin-left: 2rem;
+     color: var(--Very-Dark-Gray);
+     
+ }
+
+ .first-link {
+     margin-left: 0;
+     
+ }
+
+ .footer-links {
+     margin-top: 1rem;
+ }
+
+ .copyright {
+     margin-top: 1rem;
+ }
+
+ .copyright p {
+    color: var(--Very-Dark-Gray);
+ }
+@media (max-width: 768px) {
+    header {
+        /* background-image: url(images/mobile/image-hero.jpg); */
+    }
+
+    .header-container  {
+      background-image: url(images/mobile/image-hero.jpg); 
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+     header .text-container {
+        width: 90%;
+        transform: translateX(0);
+        letter-spacing: 2px;
+    }
+
+     header .text-container h1 {
+        font-size: 2.5rem;
+        line-height: 1.1;
+        padding: 1rem;
+    }
+    
+    main .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main .desktop-iteractive {
+        display: none;
+    }
+
+    main .mobile-iteractive {
+        display: block;
+    }
+
+    main .image-container {
+        width: 100%;
+    }
+
+    .img-fluid {
+        max-width: 100%;
+        height: auto;
+    }
+
+    main .text-container {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+    main .text-container h1 {
+        letter-spacing: 1px;
+    }
+
+    main .container .our-creation {
+        align-content: center;
+    }
+
+    .desktop-display-none {
+        display: block;
+    }
+
+    .image-grid h2 {
+        bottom: 2rem;
+        left: 2rem;
+    }
+
+    button {
+        display: block;
+        margin: 0 auto;
+        border: 2px solid var(--Very-Dark-Gray);
+        padding: 7px 3rem;
+    }
+
+    footer .footer-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    footer a {
+        margin-left: 0;
+    }
+
+    footer .container {
+        text-align: center;
+    }
+
+    .logos {
+        text-align: center;
+    }
+
+    .footer-links a {
+        margin-bottom: 1.5rem;
+    }
+}
+
+
+/* for tab */
+
+@media (min-width:768px) and (max-width: 1024px) {
+  header .text-container {
+    transform: translateX(0);
+    width: 45%;
+    
+  }         
+
+  
+
+}
